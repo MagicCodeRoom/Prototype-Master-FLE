@@ -1,0 +1,159 @@
+
+dialogue npcExplorer\\\\\ the question man
+
+// ceci va selectionner dès le début.
+1stmeet === false ? 1: 6
+0. On s'est déjà rencontré ?
+    - oui
+    - non
+
+1. Je ne m'en souvient pas.  
+    - Tu as une mauvaise mémoire.
+    - Ce n'est pas grave.
+    - deviateur si npcC 1stmeet =  false => 7 {"npcC":7}
+
+2. Tu cherches quelque chose ? 
+    - Oui je cherche des fraises.
+    - Oui, j'ai faim.
+
+3. Oh ! J'en ai vu pas loins du chez moi.
+    - Où habites tu ?
+    - Cool! C'est où chez  toi ?
+
+4. J'habite dans la maison en haut à droite. 
+    - Très bien, merci pour ton aide. 
+    - Ok, j'y vais tout de suite. Merci.
+
+5. À bientôt. 
+    - Bye
+    - Bye
+
+6. Désolé je suis occupé. bye
+    - Bye
+    - Bye.
+
+7. Tu connais npcC ? 
+    - oui.
+    - peut-être pk? 
+
+8. Tu peux lui passer un message stp ? 
+    - oui dis moi.
+    - ok je vais prendre note.
+
+9. Dis lui que la maison est en feu!
+    - ah ? 
+    - Qu'est-ce que cela veut dire ?
+
+10. Donne lui simplement ce message. Il comprendra.
+    - Ok, je vois..ça marche.
+    - Pas de soucis, je lui dirais. 
+
+11. Vas-y vite. 
+    - ok bye.
+    - au revoir!
+
+
+
+
+
+
+
+
+
+get mission from npcExplore
+missions set second meeting.
+if no mission X ,if mission y
+
+x. Désolé je suis occupé.
+    - ok bye
+    - ok bye 
+y. tu veux me dire quelque-chose ?
+    - Oui j'ai un message d'un amis.
+    - npcExplorer t'envoir un message. 
+
+y.1 Oui, dis moi.
+    - Il dit que chambre est en feu. => to corr
+    - Il dit que la maison est en feu.
+
+2. ok, j'ai compris. merci
+    - ok à plus. 
+    - ok bye
+
+corr. La chambre est en feu? Tu es certain ?
+    - oh ..non c'est la maison en est en feu!   2
+    - oh ..surememnt . 2
+
+
+
+0. ah tu es là?
+    - On se connait ?   6   none    code:(put three random numbers here)
+    - Oui, je suis de retour!   1   none    code:(put three random numbers here)
+
+1. J'ai besoin de ton aide.
+    - Désolé, je suis occupé.   88   cut    code:(put three random numbers here)
+    - En quoi puis-je t'aider.  2   none    code:(put three random numbers here)
+
+2. Je veux préparer un gateau au fraises.
+    - J'adore les fraises!  3   none ...    code:(put three random numbers here)
+    - Je préfère les gateaux au chocolat!   3   none    code:(put three random numbers here)
+
+3. ...mais je n'ai pas de fraises!
+    - Je peux t'aider à en trouver! 4   none    code:(put three random numbers here)
+    - Dommage pour toi! 88  cut code:(put three random numbers here)
+
+4. C'est gentil ! Merci!
+    - Mais de rien. 5  fraises  code:(put three random numbers here)
+    - Où je peux en trouver?    5   none    code:(put three random numbers here)
+
+5. Tu trouveras des fraises dans le jardin.
+    - Ok, j'y vais! 88   cut    code:(put three random numbers here)
+    - Très bien, à plus!    88  cut code:(put three random numbers here)
+
+6. Tu es le nouveau!
+    - Oui, je suis nouveau içi! 7   none    code:(put three random numbers here)
+    - C'est vrai!   7   none    code:(put three random numbers here)
+
+7. J'ai entendu parler de toi.
+    - ah bon?   8   none    code:(put three random numbers here)
+    - Qu'as tu entendu ?    8   none    code:(put three random numbers here)
+
+8. On m'a dis que tu aidais les gens!
+    - Oui, c'est vrai!   9  none    code:(put three random numbers here)
+    - Parfois oui!  9   none    code:(put three random numbers here)
+
+9. Ça tombe bien!
+    - Pourquoi ?    1   none    code:(put three random numbers here)
+    - ...   1   none    code:(put three random numbers here)
+
+10. Oh pas de soucis! La prochaine fois!
+    - Très bien! À plus!    11   none   code:(put three random numbers here)
+    - Aurevoir! 11   none   code:(put three random numbers here)
+
+11. Oh non! Je n'ai pas d'oeuf non plus!
+    - Tu en veux combien ?  12   none   code:(put three random numbers here)
+    - T'aurais pu me le dire avant! 12   none   code:(put three random numbers here)
+
+12. 10 ça ira.
+    - Ok, j'y vais. 88   cut    code:(put three random numbers here)
+    - Je vais essayer d'en trouver. 88   cut    code:(put three random numbers here)
+
+13. Désolé, j'ai oublié.
+    - Ok, je vais t'en chercher.    14   none   code:(put three random numbers here)
+    - Tu en veux combien ?  15   none   code:(put three random numbers here)
+
+14. Tu as trouvé des fraises! Trop bien!
+    - Oui, c'était facile!  15   none   code:(put three random numbers here)
+    - Oui, il y en a beaucoup!  15   none   code:(put three random numbers here)
+
+15. Merci, je veux te donner une récompense.
+    - Trop bien! Merci. 16   none   code:(put three random numbers here)
+    - Pas besoins, merci.  16   none    code:(put three random numbers here)
+
+16. Allez! je prépare le gâteau! À plus tard!
+    - Ciao! 88   cut    code:(put three random numbers here)
+    - À plus!   88   cut    code:(put three random numbers here)
+
+16. ...
+    - .. 100   none code:(put three random numbers here)
+    - ..  100   none    code:(put three random numbers here)
+

@@ -1,0 +1,84 @@
+
+
+
+// texte pour NPC 2
+
+
+0. ah tu es là?
+    - On se connait ?   6   none    code:(put three random numbers here)
+    - Oui, je suis de retour!   1   none    code:(put three random numbers here)
+
+1. J'ai besoin de ton aide.
+    - Désolé, je suis occupé.   88   cut    code:(put three random numbers here)
+    - En quoi puis-je t'aider.  2   none    code:(put three random numbers here)
+
+2. Je veux préparer un gateau au fraises.
+    - J'adore les fraises!  3   none ...    code:(put three random numbers here)
+    - Je préfère les gateaux au chocolat!   3   none    code:(put three random numbers here)
+
+
+0. Bonjour.
+    - Qui qui es tu ?   1   none    code:(put three random numbers here)
+    - Bonjour...?   1   none    code:(put three random numbers here)
+
+1. Je suis le gardien de la porte.
+    - Oh, comment puis-je ouvrir la porte ? 2   none    code:(put three random numbers here)
+    - Dis-moi comment ouvrir cette porte ?  2   none    code:(put three random numbers here)
+
+2. Tu dois passer le test.
+    - Ok je suis prêt.  3   none    code:(put three random numbers here)
+    - Un test de quoi ? 3   none    code:(put three random numbers here)
+
+3.Ce sont des quesions auxquelle tu dois répondre
+    - pas de problème, allons-y!    4   none    code:(put three random numbers here)
+    - ok, je t'écoutes. 4   none    code:(put three random numbers here)
+
+4.Quel est le plus grand animal terrestre ?
+    - Le lion   88   none    code:(put three random numbers here)
+    - L'éléphant    5   none    code:(put three random numbers here)
+
+5.De quelle couleur est le soleil ?
+    - Jaune 6   none    code:(put three random numbers here)
+    - Rouge 88   none    code:(put three random numbers here)
+
+6.Combien de lettres y a-t-il dans l'alphabet ?
+    - 24    88   none    code:(put three random numbers here)
+    - 26    7   none    code:(put three random numbers here)
+
+
+7.Quel est l'animal qui symbolise la France ?
+    - Le coq    8   none    code:(put three random numbers here)
+    - Le lapin  88   none    code:(put three random numbers here)
+
+8.Quelle est la capitale de l'Espagne ?
+    - Barcelone 88   none    code:(put three random numbers here)
+    - Madrid    9   none    code:(put three random numbers here)
+
+9.Quel est le plus grand océan du monde ?
+    - L'océan Pacifique 10   none    code:(put three random numbers here)
+    - L'océan Atlantique    88   none    code:(put three random numbers here)
+
+10.De quel animal la viande vient-elle pour faire du bacon ?
+    - Le cochon 11   none    code:(put three random numbers here)
+    - Le poulet 88   none    code:(put three random numbers here)
+
+11.Quel est l'organe qui nous permet de respirer ?
+    - Le cœur 88   none    code:(put three random numbers here)
+    - Les poumons   12   none    code:(put three random numbers here)
+
+12.Combien de pattes a une araignée ?
+    - 8   none    code:(put three random numbers here)
+    - 6   none    code:(put three random numbers here)
+
+13. Très bien bien! tu as obtenu assez de points pour passer la porte.
+    - merci. 88   none    code:(put three random numbers here)
+    - cool! 88   none    code:(put three random numbers here)
+
+88. Désolé, tu as perdu. 
+    - ...
+    - mais pourquoi ? 
+
+ 
+
+
+

@@ -1,0 +1,53 @@
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+/* c'est comme css normal, juste un peu modifié */
+@layer components {
+  .sidebar-icon{
+    /* this is a customed class used in the icon generator of the navbar */
+    /* sm md lg ...  for responsive layouts */
+    @apply relative flex items-center justify-center
+    h-12 w-12 mt-2 mb-2 mx-auto shadow-lg 
+    bg-gray-800 text-green-500
+    hover:bg-green-600 hover:text-white
+    rounded-3xl hover:rounded-xl
+    transition-all duration-300 ease-linear
+    cursor-pointer; 
+    /*  rounded-3xl IS XL !!! */
+    /* mx my take care of mt+b or ml+r */
+  }
+  .sidebar-tooltip{
+    @apply absolute w-auto p-2 m-2 min-w-max top-14
+    rounded-md shadow-md
+    text-white bg-gray-900
+    text-xs font-bold
+    transition-all duration-100 scale-0  origin-top;
+    /* scale-0 changer sur hover */
+  }
+
+  /* a group is a clever way to apply a class to a child when the state of the parent changes
+  !groups don't work properly in @apply so use the group utily in jsx
+  */
+}

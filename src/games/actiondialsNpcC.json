@@ -1,0 +1,276 @@
+
+{
+    "0": {
+        "npc": {"0":"Ah tu es là!"},
+        "mpc": {
+            "0": {
+                "txt": "On se connait ?",
+                "action": "none",
+                "to": 6
+            },
+            "1": {
+                "txt": "Oui, je suis de retour!",
+                "action": "none",
+                "to": 1
+            }
+        }
+    },
+    "1": {
+        "npc": {"0":"J'ai besoin de ton aide."},
+        "mpc": {
+            "0": {
+                "txt": "Désolé, je suis occupé.",
+                "action": "cut",
+                "to": 88
+            },
+            "1": {
+                "txt": "En quoi puis-je t'aider.",
+                "action": "none",
+                "to": 2
+            }
+        }
+    },
+    "2": {
+        "npc":{"0": "Je veux préparer un gateau au fraises."},
+        "mpc": {
+            "0": {
+                "txt": "J'adore les fraises!",
+                "action": "none",
+                "to": 3
+            },
+            "1": {
+                "txt": "Je préfère les gateaux au chocolat!",
+                "action": "none",
+                "to": 3
+            }
+        }
+    },
+    "3": {
+        "npc":{"0": "...mais je n'ai pas de fraises!"},
+        "mpc": {
+            "0": {
+                "txt": "Je peux t'aider à en trouver!",
+                "action": "none",
+                "to": 4
+            },
+            "1": {
+                "txt": "Dommage pour toi!",
+                "action": "cut",
+                "to": 88
+            }
+        }
+    },
+    "4": {
+        "npc": {"0":"C'est gentil ! Merci!"},
+        "mpc": {
+            "0": {
+                "txt": "Mais de rien.",
+                "action": "fraises",
+                "to": 5
+            },
+            "1": {
+                "txt": "Où je peux en trouver?",
+                "action": "none",
+                "to": 5
+            }
+        }
+    },
+    "5": {
+        "npc":{"0": "Tu trouveras des fraises dans le jardin."},
+        "mpc": {
+            "0": {
+                "txt": "Ok, j'y vais!",
+                "action": "cut",
+                "to": 88
+            },
+            "1": {
+                "txt": "Très bien, à plus!",
+                "action": "cut",
+                "to": 88
+            }
+        }
+    },
+    "6": {
+        "npc":{"0": "Tu es le nouveau!"},
+        "mpc": {
+            "0": {
+                "txt": "Oui, je suis nouveau içi!",
+                "action": "none",
+                "to": 7
+            },
+            "1": {
+                "txt": "C'est vrai!",
+                "action": "none",
+                "to": 7
+            }
+        }
+    },
+    "7": {
+        "npc":{"0": "J'ai entendu parler de toi."},
+        "mpc": {
+            "0": {
+                "txt": "ah bon?",
+                "action": "none",
+                "to": 8
+            },
+            "1": {
+                "txt": "Qu'as tu entendu ?",
+                "action": "none",
+                "to": 8
+           
+            }
+        }},
+        "8": {
+            "npc":{"0": "On m'a dis que tu aidais les gens!"},
+            "mpc": {
+                "0": {
+                    "txt": "Oui, c'est vrai!",
+                    "action": "none",
+                    "to": 9
+                },
+                "1": {
+                    "txt": "Parfois oui!",
+                    "action": "none",
+                    "to": 9
+                }
+            }
+        },
+        "9": {
+            "npc":{"0": "Ça tombe bien!"},
+            "mpc": {
+                "0": {
+                    "txt": "Pourquoi ?",
+                    "action": "none",
+                    "to": 1
+                },
+                "1": {
+                    "txt": "...",
+                    "action": "none",
+                    "to": 1
+                }
+            }
+        },
+        "10": {
+            "npc":{"0": "Oh pas de soucis! La prochaine fois!"},
+            "mpc": {
+                "0": {
+                    "txt": "Très bien! À plus!",
+                    "action": "none",
+                    "to": 11
+                },
+                "1": {
+                    "txt": "Aurevoir!",
+                    "action": "none",
+                    "to": 11
+                }
+            }
+        },
+        "11": {
+            "npc":{"0": "Oh non! Je n'ai pas d'oeuf non plus!"},
+            "mpc": {
+                "0": {
+                    "txt": "Tu en veux combien ?",
+                    "action": "none",
+                    "to": 12
+                },
+                "1": {
+                    "txt": "T'aurais pu me le dire avant!",
+                    "action": "none",
+                    "to": 12
+                }
+            }
+        },
+        "12": {
+            "npc": {"0":"10 ça ira."},
+            "mpc": {
+                "0": {
+                    "txt": "Ok, j'y vais.",
+                    "action": "cut",
+                    "to": 88
+                },
+                "1": {
+                    "txt": "Je vais essayer d'en trouver.",
+                    "action": "cut",
+                    "to": 88
+                }
+            }
+        },
+        "13": {
+            "npc": {"0":"Désolé, j'ai oublié."},
+            "mpc": {
+                "0": {
+                    "txt": "Ok, je vais t'en chercher.",
+                    "action": "none",
+                    "to": 14
+                },
+                "1": {
+                    "txt": "Tu en veux combien ?",
+                    "action": "none",
+                    "to": 15
+                }
+            }
+        },
+        "14": {
+            "npc": {"0":"Tu as trouvé des fraises! Trop bien!"},
+            "mpc": {
+                "0": {
+                    "txt": "Oui, c'était facile!",
+                    "action": "none",
+                    "to": 15
+                },
+                "1": {
+                    "txt": "Oui, il y en a beaucoup!",
+                    "action": "none",
+                    "to": 15
+                }
+            }
+        },
+        "15": {
+            "npc": {"0":"Merci, je veux te donner une récompense."},
+            "mpc": {
+                "0": {
+                    "txt": "Trop bien! Merci.",
+                    "action": "none",
+                    "to": 16
+                },
+                "1": {
+                    "txt": "Pas besoins, merci.",
+                    "action": "none",
+                    "to": 16
+                }
+            }
+        },
+        "16": {
+            "npc": {"0":"Allez! je prépare le gâteau! À plus tard!"},
+            "mpc": {
+                "0": {
+                    "txt": "Ciao!",
+                    "action": "cut",
+                    "to": 88
+                },
+                "1": {
+                    "txt": "À plus!",
+                    "action": "cut",
+                    "to": 88
+                }
+            }
+        },
+        "100": {
+            "npc": {"0":"..."},
+            "mpc": {
+                "0": {
+                    "txt": "..",
+                    "action": "none",
+                    "to": 100
+                },
+                "1": {
+                    "txt": "..",
+                    "action": "none",
+                    "to": 100
+                }
+            }
+        }
+    }
+    
+                    
+    
